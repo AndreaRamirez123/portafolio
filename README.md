@@ -12,7 +12,8 @@ Portafolio/
 ├── js/
 │   └── main.js
 ├── assets/
-│   └── img/       # foto de perfil (foto-andrea.jpg)
+│   ├── img/       # foto de perfil (foto-andrea.jpg)
+│   └── cv/        # hoja de vida en PDF
 └── README.md
 ```
 
@@ -90,3 +91,17 @@ indicando dónde colocarla.
 
 Si prefieres otro nombre o formato de archivo, cambia el `src` del `<img>`
 dentro de `.apr-photo-frame` en `index.html`.
+
+## Hoja de vida (CV)
+
+En "Inicio", junto a los botones "Contactar" y "Ver proyectos", hay un
+botón **"Descargar CV"**. Mientras no exista el archivo, el botón se ve
+atenuado y no hace nada al hacer clic (evita un enlace roto).
+
+1. Guarda tu hoja de vida como
+   `assets/cv/hoja-de-vida-andrea-ramirez.pdf`.
+2. Recarga la página: el botón se activa solo (lo detecta automáticamente
+   al cargar) y al hacer clic descarga el PDF.
+
+Si prefieres otro nombre de archivo, cambia el `href` del botón
+`#apr-cv-btn` en `index.html`.

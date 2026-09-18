@@ -181,6 +181,19 @@
     });
   }
 
+  function initCvButton() {
+    var btn = document.getElementById('apr-cv-btn');
+    if (!btn) return;
+    fetch(btn.getAttribute('href'), { method: 'HEAD' })
+      .then(function (res) { if (!res.ok) throw new Error('missing'); })
+      .catch(function () {
+        btn.style.opacity = '0.5';
+        btn.style.cursor = 'not-allowed';
+        btn.title = 'Próximamente';
+        btn.addEventListener('click', function (e) { e.preventDefault(); });
+      });
+  }
+
   function safe(fn) { try { fn(); } catch (e) { if (window.console) console.error(e); } }
 
   function setupAll() {
@@ -192,6 +205,7 @@
     safe(initStatCounters);
     safe(initSlider);
     safe(initContactForm);
+    safe(initCvButton);
   }
 
   whenReady(['apr-scroll', 'apr-ptrack', 'apr-loader'], setupAll);
