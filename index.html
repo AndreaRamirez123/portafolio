@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Andrea Paola Ramírez Torres — Portafolio</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800;900&amp;family=Fira+Code:wght@400;500;600;700&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="apr-loader">
+  <div class="apr-loader-box">
+    <div class="apr-term">
+      <div class="apr-term-head">
+        <div class="apr-term-dots"><span></span><span></span><span></span></div>
+        <div class="apr-term-title apr-mono">INICIALIZANDO PORTAFOLIO</div>
+      </div>
+      <div class="apr-term-body apr-mono">
+        <div class="apr-term-line"><span class="apr-prompt">root@andrea:~$</span>./iniciar_sistema.sh</div>
+        <div class="apr-term-line apr-out">[INFO] Cargando módulos de IA...</div>
+        <div class="apr-term-line apr-out">[INFO] Conexión a Firebase: <span class="apr-ok">ACTIVA</span></div>
+        <div class="apr-term-line apr-out">[INFO] Servicios en la nube: <span class="apr-ok">LISTOS</span></div>
+        <div class="apr-term-line apr-out">[INFO] Entorno de desarrollo: <span class="apr-ok">ONLINE</span></div>
+        <div class="apr-term-line apr-ok">[SUCCESS] Sistema listo. Bienvenido.</div>
+      </div>
+    </div>
+    <div class="apr-progress-wrap"><div class="apr-progress-fill" id="apr-progress"></div></div>
+    <div class="apr-progress-pct apr-mono" id="apr-progress-pct">0%</div>
+  </div>
+</div>
+
+<div class="apr-scroll" id="apr-scroll">
+
+  <!-- NAVBAR -->
+  <nav id="apr-navbar">
+    <div class="apr-nav-inner">
+      <div class="apr-brand"><i data-ic="shield"></i> A.RAMÍREZ</div>
+      <ul id="apr-navlinks">
+        <li><a href="#inicio" data-name="inicio">Inicio</a></li>
+        <li><a href="#proyectos" data-name="proyectos">Proyectos</a></li>
+        <li><a href="#sobremi" data-name="sobremi">Sobre mí</a></li>
+        <li><a href="#servicios" data-name="servicios">Enfoque</a></li>
+        <li><a href="#experiencia" data-name="experiencia">Experiencia</a></li>
+        <li><a href="#certificaciones" data-name="certificaciones">Formación</a></li>
+        <li><a href="#contacto" data-name="contacto">Contacto</a></li>
+      </ul>
+      <div id="apr-hamburger" onclick="document.getElementById('apr-mobile-menu').classList.add('apr-open')"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <div id="apr-mobile-menu">
+    <div id="apr-mobile-close" onclick="document.getElementById('apr-mobile-menu').classList.remove('apr-open')"></div>
+    <a href="#inicio" onclick="document.getElementById('apr-mobile-menu').classList.remove('apr-open')">INICIO</a>
+    <a href="#proyectos" onclick="document.getElementById('apr-mobile-menu').classList.remove('apr-open')">PROYECTOS</a>
+    <a href="#sobremi" onclick="document.getElementById('apr-mobile-menu').classList.remove('apr-open')">SOBRE MÍ</a>
+    <a href="#servicios" onclick="document.getElementById('apr-mobile-menu').classList.remove('apr-open')">ENFOQUE</a>
+    <a href="#experiencia" onclick="document.getElementById('apr-mobile-menu').classList.remove('apr-open')">EXPERIENCIA</a>
+    <a href="#certificaciones" onclick="document.getElementById('apr-mobile-menu').classList.remove('apr-open')">FORMACIÓN</a>
+    <a href="#contacto" onclick="document.getElementById('apr-mobile-menu').classList.remove('apr-open')">CONTACTO</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="inicio" class="apr-section">
+    <div class="apr-gridbg"></div>
+    <canvas id="apr-matrix"></canvas>
+    <div class="apr-scanline"></div>
+    <div class="apr-section-inner apr-hero-grid">
+      <div>
+        <div class="apr-badge"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4Z"></path></svg> INGENIERA DE SISTEMAS</div>
+        <p class="apr-mono" style="font-size: 16px; color: #E2E8F0; margin: 10px 0 4px; letter-spacing: 0.3px;">Andrea Paola Ram&iacute;rez Torres</p>
+        <h1 class="apr-h apr-hero-title" style="font-size: 46px; font-weight: 800; letter-spacing: 1px; line-height: 1.25; margin-bottom: 6px;">
+          <span class="apr-title-word" style="animation-delay:80ms;">CONSTRUYENDO</span><br>
+          <span class="apr-title-word apr-grad-text" style="animation-delay:260ms;">SOLUCIONES</span><br>
+          <span class="apr-title-word" style="animation-delay:440ms;">CON IA</span>
+        </h1>
+        <div class="apr-subtitle-row">
+          <span>Full Stack</span><span class="apr-sep">|</span><span>Inteligencia Artificial</span><span class="apr-sep">|</span><span>Ciberseguridad</span>
+        </div>
+        <p style="max-width: 520px; color: #94A3B8; font-size: 14.5px; margin-bottom: 8px;">
+          Ingeniera de Sistemas y Gestora IA especializada en aplicaciones full stack, automatización
+          y soluciones en la nube, actualmente profundizando en ciberseguridad.
+        </p>
+
+        <div class="apr-stats">
+          <div class="apr-stat-card"><div class="apr-glow-icon" style="width:36px;height:36px;margin:0 auto 8px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="9"></circle></svg></div><div class="apr-stat-num" data-count="5">5</div><div class="apr-stat-label">AÑOS EXP.</div></div>
+          <div class="apr-stat-card"><div class="apr-glow-icon" style="width:36px;height:36px;margin:0 auto 8px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="14" rx="2"></rect><path d="M3 9h18M8 13h4"></path></svg></div><div class="apr-stat-num" data-count="15">15</div><div class="apr-stat-label">PROYECTOS</div></div>
+          <div class="apr-stat-card"><div class="apr-glow-icon" style="width:36px;height:36px;margin:0 auto 8px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4Z"></path></svg></div><div class="apr-stat-num" data-count="3">3</div><div class="apr-stat-label">CERTIF.</div></div>
+          <div class="apr-stat-card"><div class="apr-glow-icon" style="width:36px;height:36px;margin:0 auto 8px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"></path><path d="M9 9h6v6H9z"></path></svg></div><div class="apr-stat-num" data-count="10">10</div><div class="apr-stat-label">TECNOLOGÍAS</div></div>
+        </div>
+
+        <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+          <a href="#contacto" style="background: linear-gradient(135deg,#B14EFF,#00D4FF); color: #0A0E1A; font-weight: 800; font-size: 13px; letter-spacing: 0.5px; padding: 13px 24px; border-radius: 8px; display: inline-flex; align-items: center; gap: 8px;">CONTACTAR <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"></path></svg></a>
+          <a href="#proyectos" style="background: transparent; border: 2px solid #B14EFF; color: #B14EFF; font-weight: 700; font-size: 13px; padding: 11px 22px; border-radius: 8px;">VER PROYECTOS</a>
+        </div>
+      </div>
+
+      <div class="apr-hero-visual">
+        <div class="apr-monitor-wrap">
+          <div class="apr-float" style="top: 4%; right: -6%; animation-delay: 0s;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4Z"></path></svg></div>
+          <div class="apr-float" style="bottom: 22%; right: -10%; animation-delay: 1s;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="10" width="16" height="10" rx="2"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3"></path></svg></div>
+          <div class="apr-float" style="top: 48%; left: -10%; animation-delay: 2s;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8" cy="8" r="3"></circle><path d="M11 11l7 7M15 17l3-3"></path></svg></div>
+          <div class="apr-float" style="bottom: 4%; left: -4%; animation-delay: 3s;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="14" rx="2"></rect><path d="M8 21h8M12 17v4"></path></svg></div>
+          <div class="apr-monitor">
+            <div class="apr-screen">
+              <div class="apr-screen-head"><span></span><span></span><span></span><div class="apr-screen-title">PERFIL.JPG</div></div>
+              <div class="apr-photo-frame">
+                <img src="assets/img/foto-andrea.jpg" alt="Andrea Paola Ramírez Torres" style="display:none;" onload="this.style.display='block'; this.nextElementSibling.style.display='none';">
+                <div class="apr-photo-placeholder">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4 4-6 8-6s8 2 8 6"></path></svg>
+                  <span class="apr-mono">Coloca tu foto en<br><strong>assets/img/foto-andrea.jpg</strong></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section id="proyectos" class="apr-section" style="background-color: #0A0E1A;">
+    <div class="apr-gridbg"></div>
+    <div class="apr-section-inner">
+      <div class="apr-eyebrow"><span class="apr-num apr-mono">01</span><h2 class="apr-h">PROYECTOS</h2><span class="apr-line"></span></div>
+
+      <div class="apr-reveal">
+        <div class="apr-pslider-viewport">
+          <div class="apr-pslider-track" id="apr-ptrack">
+
+            <div class="apr-pslide">
+              <div class="apr-pslide-icon"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="14" rx="2"></rect><path d="M3 9h18M8 13h4"></path></svg></div>
+              <h3 class="apr-pslide-title">CL TIENE SOLUCIONES</h3>
+              <p class="apr-pslide-desc">Dashboard de call center con IA: transcribe llamadas y genera reportes automáticos sobre BigQuery.</p>
+              <div class="apr-pslide-tags"><span>React 19</span><span>FastAPI</span><span>BigQuery</span><span>GPT-4o</span></div>
+              <div class="apr-pslide-links"><a href="https://cltiene-dashboard.web.app">Ver demo</a><a href="https://github.com/AndreaRamirez123/CLTiene" style="color:#94A3B8;">Código</a></div>
+            </div>
+
+            <div class="apr-pslide">
+              <div class="apr-pslide-icon"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 11l3 3L22 4"></path><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg></div>
+              <h3 class="apr-pslide-title">SEGUIMIENTO DE TAREAS</h3>
+              <p class="apr-pslide-desc">Tracker en tiempo real para un comité CRM/Odoo, sincronizado entre usuarios con Firestore.</p>
+              <div class="apr-pslide-tags"><span>React</span><span>Vite</span><span>Firestore</span></div>
+              <div class="apr-pslide-links"><a href="https://seguimiento-tareas-odoo.web.app">Ver demo</a><a href="https://github.com/AndreaRamirez123/Seguimiento-de-Tareas" style="color:#94A3B8;">Código</a></div>
+            </div>
+
+            <div class="apr-pslide">
+              <div class="apr-pslide-icon"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5Zm4 2v5c0 1 3 3 6 3s6-2 6-3v-5"></path></svg></div>
+              <h3 class="apr-pslide-title">KUN UNIVERSITY AI</h3>
+              <p class="apr-pslide-desc">Landing page de la universidad IA-Native que se construye en CUN, con formulario de admisiones.</p>
+              <div class="apr-pslide-tags"><span>Next.js</span><span>Firebase Hosting</span></div>
+              <div class="apr-pslide-links"><a href="https://kun-university.web.app">Ver demo</a><a href="https://github.com/AndreaRamirez123/Kun_university" style="color:#94A3B8;">Código</a></div>
+            </div>
+
+            <div class="apr-pslide">
+              <div class="apr-pslide-icon"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2a5 5 0 0 1 5 5c0 3-2 4-2 7h-6c0-3-2-4-2-7a5 5 0 0 1 5-5Z"></path><path d="M9 18h6M10 21h4"></path></svg></div>
+              <h3 class="apr-pslide-title">MINISTERIO VIRTUAL</h3>
+              <p class="apr-pslide-desc">Sitio full stack para devocionales, testimonios y multimedia, con panel de administración.</p>
+              <div class="apr-pslide-tags"><span>Angular</span><span>Node.js</span></div>
+              <div class="apr-pslide-links"><a href="https://github.com/AndreaRamirez123/ministerio-virtual" style="color:#94A3B8;">Código</a></div>
+            </div>
+
+            <div class="apr-pslide">
+              <div class="apr-pslide-icon"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4 4-6 8-6s8 2 8 6"></path></svg></div>
+              <h3 class="apr-pslide-title">COACH DE VENTAS IA</h3>
+              <p class="apr-pslide-desc">Asistente de IA (Gemini) para coaching de ventas, con login de Google y selección de idioma.</p>
+              <div class="apr-pslide-tags"><span>Gemini</span><span>Google Auth</span></div>
+              <div class="apr-pslide-links"><a href="https://coach-ventas-ia.web.app">Ver demo</a></div>
+            </div>
+
+            <div class="apr-pslide">
+              <div class="apr-pslide-icon"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12h4l3 8 4-16 3 8h4"></path></svg></div>
+              <h3 class="apr-pslide-title">TRÁMITES DE TRÁNSITO</h3>
+              <p class="apr-pslide-desc">Sincronizador de IA (Gemini) para trámites de tránsito.</p>
+              <div class="apr-pslide-tags"><span>Gemini</span><span>Firebase</span></div>
+              <div class="apr-pslide-links"><a href="https://sincronizador-tramites-transito.web.app">Ver demo</a></div>
+            </div>
+
+          </div>
+        </div>
+        <div class="apr-slider-ctrls">
+          <div class="apr-nav-btn" id="apr-prev"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"></path></svg></div>
+          <div class="apr-dots" id="apr-dots"></div>
+          <div class="apr-nav-btn" id="apr-next"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"></path></svg></div>
+        </div>
+        <div class="apr-slider-foot">
+          <span><span id="apr-cur">01</span> / 07</span>
+          <div class="apr-slider-progress"><div class="apr-slider-progress-fill" id="apr-pfill" style="width: 14%;"></div></div>
+        </div>
+        <div style="text-align: center; margin-top: 26px;">
+          <a href="https://github.com/AndreaRamirez123?tab=repositories" class="apr-mono" style="font-size: 12.5px; color: #B14EFF; font-weight: 700;">+ ver todos los proyectos en GitHub →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE MI -->
+  <section id="sobremi" class="apr-section" style="background-color: #0A0E1A;">
+    <div class="apr-gridbg"></div>
+    <div class="apr-section-inner">
+      <div class="apr-eyebrow"><span class="apr-num apr-mono">02</span><h2 class="apr-h">SOBRE MÍ</h2><span class="apr-line"></span></div>
+
+      <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 44px; align-items: start;" class="apr-grid-2">
+        <div class="apr-reveal" style="display: flex; flex-direction: column; gap: 18px;">
+          <p style="font-size: 15.5px; line-height: 1.85; color: #CBD5E1;">
+            Soy ingeniera de sistemas con experiencia en desarrollo web y soluciones basadas en inteligencia
+            artificial, enfocada en construir aplicaciones modernas con Angular, React, JavaScript y TypeScript.
+          </p>
+          <p style="font-size: 15.5px; line-height: 1.85; color: #CBD5E1;">
+            Tengo experiencia en desarrollo frontend y full stack, integración de servicios en la nube
+            (Firebase y Google Cloud) y en pruebas de software y aseguramiento de calidad.
+          </p>
+          <p style="font-size: 15.5px; line-height: 1.85; color: #CBD5E1;">
+            Actualmente me desempeño como <strong style="color: #B14EFF;">Gestora IA</strong> en la
+            Corporación Unificada Nacional (CUN), participando en el diseño e implementación
+            de soluciones tipo SaaS y en la automatización de procesos. También dicto clases y
+            diplomados por horas en la Universidad de La Salle, de forma recurrente.
+          </p>
+          <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 6px;">
+            <span class="apr-mono" style="font-size: 11.5px; padding: 6px 14px; border-radius: 100px; border: 1px solid #1E293B; color: #94A3B8;">Bogotá, Colombia</span>
+            <span class="apr-mono" style="font-size: 11.5px; padding: 6px 14px; border-radius: 100px; border: 1px solid #1E293B; color: #94A3B8;">Ingeniería de Sistemas · Uniminuto</span>
+            <span class="apr-mono" style="font-size: 11.5px; padding: 6px 14px; border-radius: 100px; border: 1px solid #1E293B; color: #94A3B8;">Tecnóloga ADSI · SENA</span>
+          </div>
+        </div>
+
+        <div class="apr-reveal apr-about-term" style="transition-delay: 120ms;">
+          <div class="apr-term-head" style="border-bottom: 1px solid #1E293B;">
+            <div class="apr-term-dots"><span></span><span></span><span></span></div>
+            <div class="apr-term-title apr-mono">PERFIL.SH</div>
+          </div>
+          <div class="apr-term-body apr-mono" style="opacity: 1; min-height: auto;">
+            <div><span class="apr-prompt">$</span>whoami</div>
+            <div class="apr-out">andrea_ramirez</div>
+            <div><span class="apr-prompt">$</span>cat perfil.txt</div>
+            <div class="apr-out">Ingeniera de Sistemas</div>
+            <div class="apr-out">Gestora IA @ Corporación Unificada Nacional</div>
+            <div class="apr-out">Full Stack + IA + Testing</div>
+            <div><span class="apr-prompt">$</span>echo $STATUS</div>
+            <div class="apr-ok">[OK] Disponible para nuevos proyectos</div>
+            <div><span class="apr-prompt">$</span>_</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENFOQUE / EXPERIENCIA -->
+  <section id="servicios" class="apr-section" style="background-color: #0A0E1A;">
+    <div class="apr-gridbg"></div>
+    <div class="apr-section-inner">
+      <div class="apr-eyebrow"><span class="apr-num apr-mono">03</span><h2 class="apr-h">ENFOQUE</h2><span class="apr-line"></span></div>
+
+      <div class="apr-reveal" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
+        <div class="apr-glow-card">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 18px;">
+            <div class="apr-glow-icon" style="margin-bottom: 0;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4 4-6 8-6s8 2 8 6"></path></svg></div>
+            <span class="apr-mono" style="font-size: 22px; color: #1E293B; font-weight: 800;">01</span>
+          </div>
+          <h3 class="apr-h" style="font-size: 19px; font-weight: 800; margin-bottom: 10px; background: linear-gradient(135deg,#B14EFF,#00D4FF); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">IA &amp; Automatización</h3>
+          <p style="font-size: 13.5px; color: #94A3B8; margin-bottom: 18px;">Integración de modelos de IA en aplicaciones web para automatizar procesos reales.</p>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 9px; font-size: 12.5px; color: #94A3B8; margin-bottom: 20px;">
+            <li>✓&nbsp; Prompt engineering</li>
+            <li>✓&nbsp; Integración de LLMs (Gemini, OpenAI, Claude)</li>
+            <li>✓&nbsp; Automatización de procesos (Python)</li>
+          </ul>
+          <a href="#contacto" style="font-size: 12.5px; font-weight: 700; color: #B14EFF;">Hablemos →</a>
+        </div>
+
+        <div class="apr-glow-card">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 18px;">
+            <div class="apr-glow-icon" style="margin-bottom: 0;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="M2 9h20"></path></svg></div>
+            <span class="apr-mono" style="font-size: 22px; color: #1E293B; font-weight: 800;">02</span>
+          </div>
+          <h3 class="apr-h" style="font-size: 19px; font-weight: 800; margin-bottom: 10px; background: linear-gradient(135deg,#B14EFF,#00D4FF); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">Desarrollo Full Stack</h3>
+          <p style="font-size: 13.5px; color: #94A3B8; margin-bottom: 18px;">Aplicaciones completas de punta a punta, del frontend al backend y la nube.</p>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 9px; font-size: 12.5px; color: #94A3B8; margin-bottom: 20px;">
+            <li>✓&nbsp; Angular / React / TypeScript</li>
+            <li>✓&nbsp; Node.js / NestJS / PHP</li>
+            <li>✓&nbsp; Firebase / Google Cloud</li>
+          </ul>
+          <a href="#contacto" style="font-size: 12.5px; font-weight: 700; color: #B14EFF;">Hablemos →</a>
+        </div>
+
+        <div class="apr-glow-card">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 18px;">
+            <div class="apr-glow-icon" style="margin-bottom: 0;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12l2 2 4-4"></path><circle cx="12" cy="12" r="9"></circle></svg></div>
+            <span class="apr-mono" style="font-size: 22px; color: #1E293B; font-weight: 800;">03</span>
+          </div>
+          <h3 class="apr-h" style="font-size: 19px; font-weight: 800; margin-bottom: 10px; background: linear-gradient(135deg,#B14EFF,#00D4FF); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">Testing &amp; Calidad</h3>
+          <p style="font-size: 13.5px; color: #94A3B8; margin-bottom: 18px;">Aseguramiento de calidad para que las aplicaciones lleguen a producción sin sorpresas.</p>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 9px; font-size: 12.5px; color: #94A3B8; margin-bottom: 20px;">
+            <li>✓&nbsp; Pruebas manuales y exploratorias</li>
+            <li>✓&nbsp; Pruebas de regresión (ISTQB)</li>
+            <li>✓&nbsp; Reporte de errores con evidencia</li>
+          </ul>
+          <a href="#contacto" style="font-size: 12.5px; font-weight: 700; color: #B14EFF;">Hablemos →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCIA -->
+  <section id="experiencia" class="apr-section" style="background-color: #0A0E1A; align-items: flex-start;">
+    <div class="apr-gridbg"></div>
+    <div class="apr-section-inner">
+      <div class="apr-eyebrow"><span class="apr-num apr-mono">04</span><h2 class="apr-h">EXPERIENCIA</h2><span class="apr-line"></span></div>
+
+      <div class="apr-reveal" style="max-width: 820px;">
+        <div style="display: grid; grid-template-columns: 150px 1fr; gap: 26px; padding: 20px 0; border-top: 1px solid #1E293B;">
+          <div class="apr-mono" style="font-size: 12px; color: #64748B;">2026 – hoy</div>
+          <div><h3 style="font-size: 15.5px; font-weight: 800;">Gestora IA</h3><p style="font-size: 12.5px; color: #B14EFF; font-weight: 700; margin: 3px 0 6px;">Corporación Unificada Nacional</p><p style="font-size: 13px; color: #94A3B8;">Soluciones IA y SaaS full stack; investigación de Odoo para KUN University.</p></div>
+        </div>
+        <div style="display: grid; grid-template-columns: 150px 1fr; gap: 26px; padding: 20px 0; border-top: 1px solid #1E293B;">
+          <div class="apr-mono" style="font-size: 12px; color: #64748B;">2025 – 2026</div>
+          <div><h3 style="font-size: 15.5px; font-weight: 800;">Tester</h3><p style="font-size: 12.5px; color: #B14EFF; font-weight: 700; margin: 3px 0 6px;">Tester IO</p><p style="font-size: 13px; color: #94A3B8;">Pruebas manuales, exploratorias y de regresión en producción.</p></div>
+        </div>
+        <div style="display: grid; grid-template-columns: 150px 1fr; gap: 26px; padding: 20px 0; border-top: 1px solid #1E293B;">
+          <div class="apr-mono" style="font-size: 12px; color: #64748B;">2024 – 2025</div>
+          <div><h3 style="font-size: 15.5px; font-weight: 800;">Desarrolladora Full Stack</h3><p style="font-size: 12.5px; color: #B14EFF; font-weight: 700; margin: 3px 0 6px;">Induclean de Colombia</p><p style="font-size: 13px; color: #94A3B8;">Apps con Python/JS y e-commerce bajo Scrum.</p></div>
+        </div>
+        <div style="display: grid; grid-template-columns: 150px 1fr; gap: 26px; padding: 20px 0; border-top: 1px solid #1E293B;">
+          <div class="apr-mono" style="font-size: 12px; color: #64748B;">2023 – 2024</div>
+          <div><h3 style="font-size: 15.5px; font-weight: 800;">Desarrolladora Frontend <span style="font-weight: 400; color: #64748B;">· Freelance</span></h3><p style="font-size: 12.5px; color: #B14EFF; font-weight: 700; margin: 3px 0 6px;">Ceas Dance</p><p style="font-size: 13px; color: #94A3B8;">Angular/TypeScript con gestión de usuarios y pagos.</p></div>
+        </div>
+        <div style="display: grid; grid-template-columns: 150px 1fr; gap: 26px; padding: 20px 0; border-top: 1px solid #1E293B;">
+          <div class="apr-mono" style="font-size: 12px; color: #64748B;">2022 – 2023</div>
+          <div><h3 style="font-size: 15.5px; font-weight: 800;">Desarrolladora de Sistemas</h3><p style="font-size: 12.5px; color: #B14EFF; font-weight: 700; margin: 3px 0 6px;">Teleperformance</p><p style="font-size: 13px; color: #94A3B8;">Interfaces web y gestión de contenido en Azure.</p></div>
+        </div>
+        <div style="display: grid; grid-template-columns: 150px 1fr; gap: 26px; padding: 20px 0; border-top: 1px solid #1E293B; border-bottom: 1px solid #1E293B;">
+          <div class="apr-mono" style="font-size: 12px; color: #64748B;">2021</div>
+          <div><h3 style="font-size: 15.5px; font-weight: 800;">Desarrolladora de Herramientas <span style="font-weight: 400; color: #64748B;">· Prácticas</span></h3><p style="font-size: 12.5px; color: #B14EFF; font-weight: 700; margin: 3px 0 6px;">SYSO</p><p style="font-size: 13px; color: #94A3B8;">Soporte técnico, desarrollo web básico y MySQL.</p></div>
+        </div>
+
+        <div style="margin-top: 24px; background: rgba(177,78,255,0.05); border: 1px solid rgba(177,78,255,0.2); border-radius: 12px; padding: 18px 22px;">
+          <p style="font-size: 13.5px; font-weight: 800;">Docente por prestación de servicios <span class="apr-mono" style="font-size: 11px; font-weight: 600; color: #B14EFF; margin-left: 6px;">recurrente</span></p>
+          <p style="font-size: 12.5px; color: #B14EFF; font-weight: 700; margin: 4px 0;">Universidad de La Salle</p>
+          <p style="font-size: 12.5px; color: #94A3B8;">Clases y diplomados por horas, cada vez que la universidad la convoca.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICACIONES -->
+  <section id="certificaciones" class="apr-section" style="background-color: #0A0E1A;">
+    <div class="apr-gridbg"></div>
+    <div class="apr-section-inner">
+      <div class="apr-eyebrow"><span class="apr-num apr-mono">05</span><h2 class="apr-h">FORMACIÓN</h2><span class="apr-line"></span></div>
+
+      <h3 class="apr-mono" style="font-size: 12.5px; color: #B14EFF; margin-bottom: 18px;">// educación</h3>
+      <div class="apr-reveal" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 46px;">
+        <div class="apr-glow-card" style="text-align: center;">
+          <div class="apr-cert-badge" style="border-style: dashed;"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="9"></circle></svg></div>
+          <h3 class="apr-h" style="font-size: 15px; font-weight: 800; margin-bottom: 4px;">ESP. EN CIBERSEGURIDAD</h3>
+          <p style="font-size: 12px; color: #94A3B8; margin-bottom: 10px;">CUN · Corporación Unificada Nacional</p>
+          <span class="apr-mono" style="font-size: 10.5px; font-weight: 700; padding: 3px 10px; border-radius: 100px; background: rgba(177,78,255,0.08); border: 1px solid #B14EFF; color: #B14EFF;">en curso</span>
+        </div>
+        <div class="apr-glow-card" style="text-align: center;">
+          <div class="apr-cert-badge"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="M2 9h20"></path></svg></div>
+          <h3 class="apr-h" style="font-size: 15px; font-weight: 800; margin-bottom: 4px;">INGENIERÍA DE SISTEMAS</h3>
+          <p style="font-size: 12px; color: #94A3B8; margin-bottom: 10px;">Universidad Minuto de Dios</p>
+          <span class="apr-mono" style="font-size: 10.5px; font-weight: 700; padding: 3px 10px; border-radius: 100px; background: rgba(255,255,255,0.05); border: 1px solid #1E293B; color: #94A3B8;">culminado</span>
+        </div>
+        <div class="apr-glow-card" style="text-align: center;">
+          <div class="apr-cert-badge"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4z"></path><path d="M9 9h6v6H9z"></path></svg></div>
+          <h3 class="apr-h" style="font-size: 15px; font-weight: 800; margin-bottom: 4px;">TECNÓLOGA ADSI</h3>
+          <p style="font-size: 12px; color: #94A3B8; margin-bottom: 10px;">SENA · Análisis y Desarrollo de Sistemas de Información</p>
+          <span class="apr-mono" style="font-size: 10.5px; font-weight: 700; padding: 3px 10px; border-radius: 100px; background: rgba(255,255,255,0.05); border: 1px solid #1E293B; color: #94A3B8;">culminado</span>
+        </div>
+      </div>
+
+      <h3 class="apr-mono" style="font-size: 12.5px; color: #B14EFF; margin-bottom: 18px;">// certificaciones</h3>
+      <div class="apr-reveal" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+        <div class="apr-glow-card" style="text-align: center;">
+          <div class="apr-cert-badge"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12l2 2 4-4"></path><circle cx="12" cy="12" r="9"></circle></svg></div>
+          <h3 class="apr-h" style="font-size: 15px; font-weight: 800; margin-bottom: 4px;">ISTQB CTFL 4.0</h3>
+          <p style="font-size: 12px; color: #94A3B8;">Udemy</p>
+        </div>
+        <div class="apr-glow-card" style="text-align: center;">
+          <div class="apr-cert-badge"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4Z"></path></svg></div>
+          <h3 class="apr-h" style="font-size: 15px; font-weight: 800; margin-bottom: 4px;">FUNDAMENTOS DE CIBERSEGURIDAD</h3>
+          <p style="font-size: 12px; color: #94A3B8;">Corporación CICCE</p>
+        </div>
+        <div class="apr-glow-card" style="text-align: center;">
+          <div class="apr-cert-badge"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="M2 9h20"></path></svg></div>
+          <h3 class="apr-h" style="font-size: 15px; font-weight: 800; margin-bottom: 4px;">HERRAMIENTAS INFORMÁTICAS</h3>
+          <p style="font-size: 12px; color: #94A3B8;">Colsubsidio · Airbus Group</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="apr-section" style="background-color: #0A0E1A; display: flex; flex-direction: column; justify-content: center;">
+    <div class="apr-gridbg"></div>
+    <div class="apr-section-inner">
+      <div class="apr-eyebrow"><span class="apr-num apr-mono">06</span><h2 class="apr-h">CONTACTO</h2><span class="apr-line"></span></div>
+
+      <div class="apr-reveal apr-grid-2" style="display: grid; grid-template-columns: 1.3fr 1fr; gap: 40px; margin-bottom: 44px;">
+
+        <form id="apr-contact-form" style="display: flex; flex-direction: column; gap: 18px;">
+          <input type="hidden" name="access_key" value="REEMPLAZA_CON_TU_ACCESS_KEY">
+          <input type="hidden" name="subject" value="Nuevo mensaje desde el portafolio">
+          <input type="checkbox" name="botcheck" class="apr-hp" style="display:none;" tabindex="-1" autocomplete="off">
+          <div>
+            <label class="apr-mono" style="display: block; font-size: 11px; color: #64748B; margin-bottom: 6px;">NOMBRE</label>
+            <input type="text" id="apr-f-name" name="name" required="" style="width: 100%; padding: 12px 14px; background: #0F1419; border: 1px solid #1E293B; border-radius: 8px; color: #E2E8F0; font-family: 'Work Sans', sans-serif; font-size: 14px;">
+          </div>
+          <div>
+            <label class="apr-mono" style="display: block; font-size: 11px; color: #64748B; margin-bottom: 6px;">EMAIL</label>
+            <input type="email" id="apr-f-email" name="email" required="" style="width: 100%; padding: 12px 14px; background: #0F1419; border: 1px solid #1E293B; border-radius: 8px; color: #E2E8F0; font-family: 'Work Sans', sans-serif; font-size: 14px;">
+          </div>
+          <div>
+            <label class="apr-mono" style="display: block; font-size: 11px; color: #64748B; margin-bottom: 6px;">ASUNTO</label>
+            <input type="text" id="apr-f-subject" name="asunto" style="width: 100%; padding: 12px 14px; background: #0F1419; border: 1px solid #1E293B; border-radius: 8px; color: #E2E8F0; font-family: 'Work Sans', sans-serif; font-size: 14px;">
+          </div>
+          <div>
+            <label class="apr-mono" style="display: block; font-size: 11px; color: #64748B; margin-bottom: 6px;">MENSAJE</label>
+            <textarea id="apr-f-message" name="message" rows="4" required="" style="width: 100%; padding: 12px 14px; background: #0F1419; border: 1px solid #1E293B; border-radius: 8px; color: #E2E8F0; font-family: 'Work Sans', sans-serif; font-size: 14px; resize: vertical;"></textarea>
+          </div>
+          <button type="submit" id="apr-f-submit" style="align-self: flex-start; background: linear-gradient(135deg,#B14EFF,#00D4FF); color: #0A0E1A; font-weight: 800; font-size: 13px; letter-spacing: 0.5px; padding: 13px 26px; border: none; border-radius: 8px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px;">
+            <span class="apr-f-submit-label">ENVIAR MENSAJE</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><rect x="3" y="11" width="18" height="10" rx="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+          </button>
+          <p class="apr-mono" id="apr-f-status" style="font-size: 11px; color: #64748B;">// el mensaje llega directo a tu correo, sin abrir nada</p>
+        </form>
+
+        <div style="display: flex; flex-direction: column; gap: 16px;">
+          <a href="mailto:andrearamirezt1992@gmail.com" class="apr-glow-card" style="display: flex; gap: 16px; align-items: center;">
+            <div class="apr-glow-icon" style="margin-bottom: 0;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="M2 6l10 7L22 6"></path></svg></div>
+            <div><h4 style="font-size: 13.5px; font-weight: 800;">Email</h4><span style="font-size: 12px; color: #94A3B8;">andrearamirezt1992@gmail.com</span></div>
+          </a>
+          <a href="https://wa.me/573213665182" class="apr-glow-card" style="display: flex; gap: 16px; align-items: center;">
+            <div class="apr-glow-icon" style="margin-bottom: 0;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.4 2.1L8.1 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.9 2Z"></path></svg></div>
+            <div><h4 style="font-size: 13.5px; font-weight: 800;">WhatsApp</h4><span style="font-size: 12px; color: #94A3B8;">+57 321 366 5182</span></div>
+          </a>
+          <a href="https://www.linkedin.com/in/andrea-paola-ramirez-torres-a1200a1b0" class="apr-glow-card" style="display: flex; gap: 16px; align-items: center;">
+            <div class="apr-glow-icon" style="margin-bottom: 0;"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"></path></svg></div>
+            <div><h4 style="font-size: 13.5px; font-weight: 800;">LinkedIn</h4><span style="font-size: 12px; color: #94A3B8;">andrea-paola-ramirez-torres</span></div>
+          </a>
+          <a href="https://github.com/AndreaRamirez123" class="apr-glow-card" style="display: flex; gap: 16px; align-items: center;">
+            <div class="apr-glow-icon" style="margin-bottom: 0;"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.66.5 12.03c0 5.1 3.29 9.42 7.86 10.95.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.24 2.77.12 3.06.74.8 1.19 1.83 1.19 3.09 0 4.43-2.7 5.4-5.27 5.69.42.36.78 1.07.78 2.16 0 1.56-.01 2.81-.01 3.19 0 .3.2.66.79.55A10.53 10.53 0 0 0 23.5 12.03C23.5 5.66 18.35.5 12 .5Z"></path></svg></div>
+            <div><h4 style="font-size: 13.5px; font-weight: 800;">GitHub</h4><span style="font-size: 12px; color: #94A3B8;">AndreaRamirez123</span></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="apr-reveal" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; border-top: 1px solid #1E293B; padding-top: 22px;">
+        <span class="apr-mono" style="font-size: 12px; color: #64748B;">© Andrea Paola Ramírez Torres · 2026</span>
+        <div class="apr-social" style="display: flex; gap: 18px;">
+          <a href="https://github.com/AndreaRamirez123"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.66.5 12.03c0 5.1 3.29 9.42 7.86 10.95.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.24 2.77.12 3.06.74.8 1.19 1.83 1.19 3.09 0 4.43-2.7 5.4-5.27 5.69.42.36.78 1.07.78 2.16 0 1.56-.01 2.81-.01 3.19 0 .3.2.66.79.55A10.53 10.53 0 0 0 23.5 12.03C23.5 5.66 18.35.5 12 .5Z"></path></svg></a>
+          <a href="https://www.linkedin.com/in/andrea-paola-ramirez-torres-a1200a1b0"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"></path></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
